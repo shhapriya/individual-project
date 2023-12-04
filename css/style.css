@@ -1,0 +1,210 @@
+nav {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: right; 
+  font-size: 16px;
+ }
+ nav a {
+ text-decoration: none; 
+ color: black; 
+ margin: 0 15px; 
+ border: 1px solid #333; 
+ padding: 10px 15px;
+ }
+ nav li {
+ display: inline-block; 
+ }
+
+ nav a.active {
+  font-weight: bold;
+  color: rgb(13, 0, 255); 
+  text-decoration: none; 
+  font-family: 'Merriweather', serif; 
+}
+body {
+  /* display: grid; */
+    background: linear-gradient(to right, #d8b6cd, #a0c0c3);
+    /* Replace #f2c4e5 and #a6e3e9 with your desired pastel colors */
+    margin: 0; /* Remove default margin */
+    font-family: 'Merriweather', serif;
+  }
+
+  .MainInformation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between items */
+}
+
+.LongText{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.styled-box {
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.styled-box img {
+  display: block;
+  width: 60%;
+  height: auto;
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+button {
+  flex: 1 0 calc(100% - 10px);
+  max-width: calc(100% - 10px);
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+  @media screen and (min-width: 768px) {
+   /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+  }
+  footer {
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button-container {
+  margin: 20px auto;
+  max-width: 600px; /* Adjust the max-width based on your design */
+}
+
+@media screen and (min-width: 861px) {
+  body {
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.animated-text {
+    font-size: 48px;
+    text-transform: uppercase;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  .styled-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.grid-item {
+    width: 45%;
+    height: 50%; 
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}
+
+.styled-box img {
+    display: block;
+    width: 50%;
+    height: 50%; 
+    object-fit: contain;
+    height: auto;
+}
+#skip:focus {
+  /* position: absolute;    */
+  top: -5px;
+  left: 0px; 
+  font-family: Fantasy; 
+
+}
+#skip {
+ position: fixed;   
+  /* top: -30px; */
+  left: -1000px; 
+  font-family: Fantasy; 
+}
+.button-container {
+  margin: 20px auto;
+  max-width: 960px; /* Adjust the max-width based on your design */
+}
+}
