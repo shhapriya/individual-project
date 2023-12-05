@@ -5,6 +5,9 @@ nav {
   padding-bottom: 30px;
   text-align: right; 
   font-size: 16px;
+  grid-template-columns: 1fr 1fr; 
+  display: flex; 
+
  }
  nav a {
  text-decoration: none; 
@@ -12,6 +15,8 @@ nav {
  margin: 0 15px; 
  border: 1px solid #333; 
  padding: 10px 15px;
+ position: relative;
+ z-index: 1;
  }
  nav li {
  display: inline-block; 
